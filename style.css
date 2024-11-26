@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor01: #C58351;
+    --cor02: #9B7659;
+    --cor03: #706053;
+    --cor04: #332B25;
+
+    --fonte01: Arial, Helvetica, verdana, sans-serif;
+    --fonte02: 'Passion One';
+    --fonte03: "Sriracha";
+
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+
+header{
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;
+} 
+
+header p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+    font-weight: bold;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.678);
+    color: var(--cor03);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.5vh;
+}
+
+section p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: var(--cor04);
+}
+
+section.imagem{
+    background-color: var(--cor02);
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: 100%;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+    background-size: cover;
+}
+
+section.imagem#joaninha{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section.imagem#livro{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.457);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer{
+    background-color: var(--cor02);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
